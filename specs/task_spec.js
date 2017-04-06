@@ -21,6 +21,9 @@ it("task has reward", function(){
   assert.strictEqual("chocolate", task.getReward())
 })
 
+it("can check if task is complete", function(){
+  assert.strictEqual(false, task.isComplete())
+})
 
 
 

@@ -2,7 +2,7 @@ var Task = function(difficulty, urgency, reward){
   this.difficulty = difficulty
   this.urgency = urgency
   this.reward = reward
-  this.completed = false
+  this.complete = false
 }
 
 Task.prototype = {
@@ -18,9 +18,9 @@ Task.prototype = {
     return this.reward
   },
 
-// isComplete: function(){
-
-// }
+  isComplete: function(){
+    return this.complete
+  }
 
 
 
