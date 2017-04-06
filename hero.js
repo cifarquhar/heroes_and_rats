@@ -20,6 +20,9 @@ Hero.prototype = {
   },
   countTasks: function(){
     return this.tasks.length
+  },
+  addTask: function(task){
+    this.tasks.push(task)
   }
 }
 

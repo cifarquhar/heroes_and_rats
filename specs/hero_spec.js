@@ -38,7 +38,7 @@ it("starts with empty task list", function(){
   assert.strictEqual(0,hero.countTasks())
 })
 
-xit("can add tasks to list",function(){
+it("can add tasks to list",function(){
   hero.addTask(task1)
   assert.strictEqual(1,hero.countTasks())
 })
