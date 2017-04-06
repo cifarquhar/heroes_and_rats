@@ -21,6 +21,10 @@ it("has a favourite food",function(){
   assert.strictEqual("Cheese",hero.getFavFood())
 })
 
+it("can say name",function(){
+  assert.strictEqual("My name is Mr Hero",hero.sayName())
+})
+
 
 
 

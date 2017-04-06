@@ -14,6 +14,9 @@ Hero.prototype = {
   },
   getFavFood: function(){
     return this.favFood
+  },
+  sayName: function(){
+    return "My name is " + this.getName()
   }
 }
 
