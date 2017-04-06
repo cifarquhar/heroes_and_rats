@@ -58,6 +58,16 @@ it("can add 1.5x replenishment value to health when eats fav food", function(){
 
 })
 
+it("can sort by attribute", function(){
+  hero.addTask(task1)
+  hero.addTask(task2)
+  hero.addTask(task3)
+  hero.addTask(task4)
+
+  hero.sortByAttribute("reward")
+
+})
+
 
 
 

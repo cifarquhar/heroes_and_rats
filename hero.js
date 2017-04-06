@@ -1,3 +1,5 @@
+var _ = require('lodash')
+
 var Hero = function(name,health,favFood){
   this.name = name
   this.health = health
@@ -31,8 +33,16 @@ Hero.prototype = {
     } else {
       this.health += food.value      
     }
-  }
+  },
 
+  sortByAttribute: function(att){
+
+   var sorted =  _.sortBy(this.tasks, att)
+
+    console.log(sorted)
+
+
+  }
 
 
 }
