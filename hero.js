@@ -17,6 +17,9 @@ Hero.prototype = {
   },
   sayName: function(){
     return "My name is " + this.getName()
+  },
+  countTasks: function(){
+    return this.tasks.length
   }
 }
 
