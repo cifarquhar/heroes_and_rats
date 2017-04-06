@@ -1,18 +1,18 @@
 var Task = function(difficulty, urgency, reward){
-this.difficulty = difficulty
-this.urgency = urgency
-this.reward = reward
-this.completed = false
+  this.difficulty = difficulty
+  this.urgency = urgency
+  this.reward = reward
+  this.completed = false
 }
 
 Task.prototype = {
-getDifficulty: function(){
-return this.difficulty
-},
+  getDifficulty: function(){
+    return this.difficulty
+  },
 
-// getUrgency: function(){
-
-// },
+  getUrgency: function(){
+    return this.urgency
+  },
 
 // getReward: function(){
 
