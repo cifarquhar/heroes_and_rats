@@ -6,6 +6,9 @@ var Food = function(name,value){
 Food.prototype = {
   getName: function(){
     return this.name
+  },
+  getValue: function(){
+    return this.value
   }
 }
 
