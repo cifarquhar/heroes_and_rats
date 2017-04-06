@@ -8,6 +8,12 @@ var Hero = function(name,health,favFood){
 Hero.prototype = {
   getName: function(){
     return this.name
+  },
+  getHealth: function(){
+    return this.health
+  },
+  getFavFood: function(){
+    return this.favFood
   }
 }
 

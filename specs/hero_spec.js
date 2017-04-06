@@ -13,6 +13,16 @@ it("has a name",function(){
   assert.strictEqual("Mr Hero",hero.getName())
 })
 
+it("has health",function(){
+  assert.strictEqual(100,hero.getHealth())
+})
+
+it("has a favourite food",function(){
+  assert.strictEqual("Cheese",hero.getFavFood())
+})
+
+
+
 
 
 
