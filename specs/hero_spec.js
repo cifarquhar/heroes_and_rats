@@ -1,6 +1,7 @@
 var assert = require("assert")
 var Hero = require("../hero")
 var Task = require("../task")
+var Food = require("../food")
 
 describe('Hero',function(){
 
@@ -9,6 +10,7 @@ var task1
 var task2
 var task3
 var task4
+var food
 
 beforeEach(function(){
   hero = new Hero("Mr Hero",100,"Cheese")
@@ -16,6 +18,8 @@ beforeEach(function(){
   task2 = new Task(5, 1, "diamond")
   task3 = new Task(10, 3, "bag of chips")
   task4 = new Task(2, 1, "free cup of tea")
+  food1 = new Food("chips",5)
+  food2 = new Food("Cheese",10)
 })
 
 it("has a name",function(){
@@ -42,6 +46,13 @@ it("can add tasks to list",function(){
   hero.addTask(task1)
   assert.strictEqual(1,hero.countTasks())
 })
+
+it("can add replenishment value to health",function(){
+  hero.eat(food1)
+  assert.strictEqual(105,hero.getHealth())
+})
+
+
 
 
 
