@@ -14,9 +14,9 @@ Task.prototype = {
     return this.urgency
   },
 
-// getReward: function(){
-
-// },
+  getReward: function(){
+    return this.reward
+  },
 
 // isComplete: function(){
 
