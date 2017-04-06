@@ -25,6 +25,15 @@ it("can check if task is complete", function(){
   assert.strictEqual(false, task.isComplete())
 })
 
+it('can toggle task complete/incomplete status', function(){
+  task.toggleCompleteStatus()
+  assert.strictEqual(true, task.isComplete())
+  task.toggleCompleteStatus()
+  assert.strictEqual(false, task.isComplete())
+  task.toggleCompleteStatus()
+  assert.strictEqual(true, task.isComplete())
+})
+
 
 
 

@@ -20,9 +20,11 @@ Task.prototype = {
 
   isComplete: function(){
     return this.complete
+  },
+
+  toggleCompleteStatus: function(){
+    this.complete = !this.complete
   }
-
-
 
 }
 
