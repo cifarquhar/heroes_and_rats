@@ -52,6 +52,12 @@ it("can add replenishment value to health",function(){
   assert.strictEqual(105,hero.getHealth())
 })
 
+it("can add 1.5x replenishment value to health when eats fav food", function(){
+  hero.eat(food2)
+  assert.strictEqual(115, hero.getHealth())
+
+})
+
 
 
 
